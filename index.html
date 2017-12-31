@@ -40,7 +40,7 @@
     <canvas id="anm-canvas" class="anm-canvas"></canvas>
     <div class="left-col" q-class="show:isShow">
       
-<div class="overlay" style="background: #4d4d4d"></div>
+<div class="overlay" style="background: 33FFFF"></div>
 <div class="intrude-less">
 	<header id="header" class="inner">
 		<a href="/" class="profilepic">
@@ -78,10 +78,6 @@
 		        
 					<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/xu-chao-59-11-65/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 		        
-					<a class="qq" target="_blank" href="/755563428" title="qq"><i class="icon-qq"></i></a>
-		        
-					<a class="weixin" target="_blank" href="/xuchao11223344" title="weixin"><i class="icon-weixin"></i></a>
-		        
 					<a class="mail" target="_blank" href="mailto:755563428@qq.com" title="mail"><i class="icon-mail"></i></a>
 		        
 			</div>
@@ -93,7 +89,7 @@
     <div class="mid-col" q-class="show:isShow,hide:isShow|isFalse">
       
 <nav id="mobile-nav">
-  	<div class="overlay js-overlay" style="background: #4d4d4d"></div>
+  	<div class="overlay js-overlay" style="background: 33FFFF"></div>
 	<div class="btnctn js-mobile-btnctn">
   		<div class="slider-trigger list" q-on="click: openSlider(e)"><i class="icon icon-sort"></i></div>
 	</div>
@@ -121,10 +117,6 @@
 			        
 						<a class="zhihu" target="_blank" href="https://www.zhihu.com/people/xu-chao-59-11-65/activities" title="zhihu"><i class="icon-zhihu"></i></a>
 			        
-						<a class="qq" target="_blank" href="/755563428" title="qq"><i class="icon-qq"></i></a>
-			        
-						<a class="weixin" target="_blank" href="/xuchao11223344" title="weixin"><i class="icon-weixin"></i></a>
-			        
 						<a class="mail" target="_blank" href="mailto:755563428@qq.com" title="mail"><i class="icon-mail"></i></a>
 			        
 				</div>
@@ -151,35 +143,85 @@
           <div id="js-content" class="content-ll">
             
   
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+    <article id="post-doc_1" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/12/31/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2017/12/31/hello-world/" class="archive-article-date">
-  	<time datetime="2017-12-31T09:36:55.554Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-31</time>
-</a>
-        
-      </header>
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+        <p>#这是第一篇文章</p>
+<p>仅仅是为了测试，哈哈哈</p>
+<hr>
+<blockquote>
+<p>首先感觉makedown语法很简洁，挺喜欢用它写笔记的</p>
+<p>下面测试一下code</p>
+</blockquote>
+<pre><code>using namespace std;
+int map[1000][1000],vis[1000],dis[1000],cost[1000][1000],mon[1000],n,m;
+void prim( int v0,int vn)
+{
+vis[v0]=1;
+for(int i=1;i&lt;=n;i++)
+{
+    dis[i]=map[v0][i];
+    mon[i]=cost[v0][i];
+}
+for(int i=1;i&lt;n;i++)
+{
+    int pos;
+    int mm=INF;
+    for(int j=1;j&lt;=n;j++)
+    {
+        if(!vis[j]&amp;&amp;dis[j]&lt;mm)
+        {
+            mm=dis[j];
+            pos=j;
+        }
+    }
+    vis[pos]=1;
+    for(int j=1;j&lt;=n;j++)
+    {
+        if(!vis[j]&amp;&amp;INF&gt;map[pos][j])
+        {
+            if(dis[pos]+map[pos][j]&lt;dis[j])
+            {
+                dis[j]=dis[pos]+map[pos][j];
+                mon[j]=mon[pos]+cost[pos][j];
+            }
+            else if(dis[pos]+map[pos][j]==dis[j]&amp;&amp;mon[pos]+cost[pos][j]&lt;mon[j])
+            {
+                mon[j]=cost[pos][j]+mon[pos];
+            }
+        }
+    }
+}
+cout&lt;&lt;dis[vn]&lt;&lt;&apos; &apos;&lt;&lt;mon[vn]&lt;&lt;endl;
+}
+
+
+int main()
+{
+int t;
+cin&gt;&gt;t;
+while(t--)
+{
+    int s,d;
+    cin&gt;&gt;n&gt;&gt;m&gt;&gt;s&gt;&gt;d;
+    memset(map,INF,sizeof(map));
+    memset(vis,0,sizeof(vis));
+    memset(dis,0x3f,sizeof(dis));
+    memset(cost,0x3f,sizeof(cost));
+    for(int i=0;i&lt;m;i++)
+    {
+        int a,b,l,c;
+        cin&gt;&gt;a&gt;&gt;b&gt;&gt;l&gt;&gt;c;
+        map[a][b]=map[b][a]=l;
+        cost[a][b]=cost[b][a]=c;
+    }
+    prim(s,d);
+}
+}
+</code></pre><p>呜，有点难操控不过还好</p>
+<p>图片就不测试了，毕竟需要站外图片链接，我的千牛还没实名认证==</p>
 
       
 
@@ -192,7 +234,7 @@
 
       
         <p class="article-more-link">
-          <a class="article-more-a" href="/2017/12/31/hello-world/">展开全文 >></a>
+          <a class="article-more-a" href="/2017/12/31/doc_1/">展开全文 >></a>
         </p>
       
 
@@ -354,7 +396,7 @@ return o(i(t),arguments.length<2?void 0:u(arguments[1]))}})},function(t,n,r){var
     
     	<section class="tools-section tools-section-me" q-show="aboutme">
   	  	
-  	  		<div class="aboutme-wrap" id="js-aboutme">努力做一番引以为豪的事业,&lt;br&gt;找一个一生荣辱与共的妻子。&lt;br&gt;&lt;br&gt;在有生之年报答帮过我的人,&lt;br&gt;有能力去帮助需要帮助的人.</div>
+  	  		<div class="aboutme-wrap" id="js-aboutme">努力做一番引以为豪的事业,&lt;br&gt;找一个一生荣辱与共的妻子。&lt;br&gt;&lt;br&gt;在有生之年报答帮过我的人,&lt;br&gt;有能力去帮助需要帮助的人.&lt;br&gt;&lt;br&gt;&lt;br&gt;------徐超。</div>
   	  	
     	</section>
     
